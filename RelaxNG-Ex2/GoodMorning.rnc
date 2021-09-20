@@ -1,0 +1,30 @@
+start = xml
+xml = element xml{source,contents}
+
+source = element source {(title | altTitle | author | 
+
+pubPlace | publisher | date | note)*}
+title = element title{level,text}
+level = attribute level{"book"|"inner"}
+altTitle = element altTitle {text}
+author = element author {text}
+pubPlace = element pubPlace{where, text}
+where = attribute where{"NYC"}
+publisher = element publisher{text}
+date = element date{when}
+when = attribute when{xsd:gYear}
+note = element note{text}
+
+contents = element contents{poem*}
+
+poem = element poem{id*,(title+|lineGroup+)*}
+id = attribute id{"harlem"|"goodMorning"}
+lineGroup = element lineGroup{(line+|placeName|place|motif*)*}
+line = element line{n,(emph*|motif*|placeName*|place*|text)*}
+n = attribute n{xsd:integer}
+emph = element emph{text}
+placeName = element placeName{ref,text}
+ref = attribute ref{"NYC-Harlem"|"NYC-Brook"|"NYC-Bronx"|"NYC-Man"|"NYC-PennSt"|"PR"|"Cuba"|"Ha"|"Ja"|"NYC"|"Ga"|"Fla"|"La"}
+place = element place{(type|ref|text)*}
+type = attribute type{"trainStat"}
+motif = element motif{text}
