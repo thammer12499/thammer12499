@@ -1,6 +1,6 @@
 
 body {
-background-color: BurlyWood;
+background-color:white;
 color: indigo;
 font-family: arial, helvetica, sans-serif;
 }
@@ -9,14 +9,46 @@ padding: 5em;
     
 }
 
-/*  ebb: These are CSS comments! The following rules style the "picture frame" HTML elements 
- * and help control image size in a way that scales. We made the figure element be 30% of the width of the page.
- * Then we controlled the width of the image **inside** the picture frame of the <figure>: it's allowed to fill 100% of the figure element, but can't get larger than 300 pixels.
- * You can give any element a background-color property, so we are showing how to do it here.  */
- 
+a:link{
+    color:white;
+}
+
+div.warning{
+    background-color:red;
+    font-family: impact, sans-serif;
+    text-align:center;
+    line-height: 1.5;
+    font-weight: bold;
+    color: white;
+    border:blue solid 3px;
+    margin-top:20px;
+    padding: 5px;    
+}
+
+div.center{
+    padding: 5px;
+    margin-top:20px;
+    background-color: red;
+    border:blue solid 3px;
+    color: white;
+    font-family: impact, sans-serif;
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-indent: 50px;
+}
+
+section.gallery{
+    margin:5px;
+    border:white 3px;
+    background-color:red;
+    float:left;
+    width:256px;
+}
+section.gallery img{
+    width:100%;
+    height: auto;
+}
+
 figure {background-color:lavender; margin:3em; width: 30%;} 
 figcaption {font-style:italic; font-size:.8em;}
 figure img {max-width:300px; width:100%;}
-/* Notice how the last rule is written: figure image {properties} . 
- * The rule above controls the <img> element that is contained inside <figure>. 
- * It does not control the size of the <img> that is not inside a <figure>. */
