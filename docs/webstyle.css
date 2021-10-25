@@ -58,18 +58,34 @@ div.center{
     text-indent: 50px;
 }
 
-section.gallery{
-    margin:5px;
+.gallery{
+    margin:20px;
     border:white 3px;
     background-color:red;
+    border:blue solid 3px;
     float:left;
     width:256px;
 }
-section.gallery img{
-    width:100%;
-    height: auto;
+
+.desc{
+  padding: 15px;
+  text-align: center;
 }
 
-figure {background-color:lavender; margin:3em; width: 30%;} 
-figcaption {font-style:italic; font-size:.8em;}
-figure img {max-width:300px; width:100%;}
+img.galPic{
+    width:90%;
+    height:auto;
+}
+
+.newtCap{
+    border: black solid 1px;
+    padding: 3px;
+    word-wrap: break-word;
+    text-align:center;
+}
+
+.galPic:active{
+    width:50%;
+    height:auto;
+    margin:30px;
+}
