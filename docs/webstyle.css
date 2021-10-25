@@ -13,7 +13,28 @@ a:link{
     color:white;
 }
 
-div.warning{
+
+.dropdown{
+        position: relative;
+        display:inline-block;
+}
+
+.dropdown-content{
+    display:none;
+    position: absolute;
+    background-color:white;
+    border: purple solid 3px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.warning{
     background-color:red;
     font-family: impact, sans-serif;
     text-align:center;
@@ -21,13 +42,13 @@ div.warning{
     font-weight: bold;
     color: white;
     border:blue solid 3px;
-    margin-top:20px;
+    margin:20px;
     padding: 5px;    
 }
 
 div.center{
     padding: 5px;
-    margin-top:20px;
+    margin:20px;
     background-color: red;
     border:blue solid 3px;
     color: white;
