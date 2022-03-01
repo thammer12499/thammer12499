@@ -1,0 +1,130 @@
+
+body{
+        background-image:url("images/backgroundimage.jpg");
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size:1280px;
+        background-attachment:fixed;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+section{
+    padding:10px;
+}
+
+section.main{
+            top: 0px;
+            position:inherit;
+            margin:auto;
+            background:white;
+            border: 3px solid black;
+            border-radius: 5px;
+            text-align:justify;
+            width: 800px;
+}
+
+a:link{color:white;}
+a:visited, a:hover{color:orange;}
+a:active{color:yellow;}
+
+
+table.backgroundmenu{
+            background:none;
+            border:none;
+            margin:auto;
+}
+
+td.menu {
+            width: 300px;
+            height: auto;
+            background:black;
+            border:3px solid grey;
+            border-radius: 5px;
+            padding: 3px;
+            text-align: center;
+            color:white; 
+}
+
+
+td.projects {
+            width: 300px;
+            height: auto;
+            background:none;
+            border:none;
+            border-radius: 5px;
+            padding: 3px;
+            text-align: center;
+            color:white; 
+}
+
+img.tbl {
+			width:100px;
+			height:auto;
+		}
+		
+img.projects {
+			width:200px;
+			height:auto;
+			border: 5px solid gray;
+			border-radius: 5px;
+		}		
+		
+img.portrait{
+    width:250px;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    border: 5px solid black;
+    border-radius:5px;
+}
+
+h1.header
+		{
+		    font-size: 250%;
+			text-align:center;
+			color: orange;
+			border: 3px solid black;
+            background: white;
+            padding:5px;
+		}
+		
+p.bio
+		{
+			font-size: 105%;
+			margin: auto;
+			text-indent: 50px;
+			letter-spacing: 1px;
+			padding: 5px;
+			word-wrap: break-word;
+		}
+
+ul{
+			width: 300px;
+			margin-left: 50px;
+			padding:5px;
+}
+
+li{
+    text-align:justify;
+}
+
+h2{
+    text-align:center;
+    text-indent:25px;
+}
+
+
+h3{
+    padding:5px;
+}
+
+h4{
+    padding:5px;
+    text-decoration:underline;
+    text-indent: 25px;
+}
+
+pre{
+    text-align:center;
+}
