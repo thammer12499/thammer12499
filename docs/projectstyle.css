@@ -134,3 +134,8 @@ button{
     margin: auto;
     width: 100%;
 }
+
+span.RPG.on {color:#3333CC}
+span.FPS.on {color:#FF3300}
+span.SurHor.on {color:#477519}
+span.Farm.on {color:#66ff99}
