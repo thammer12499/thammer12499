@@ -16,6 +16,7 @@ function init(){
     // Event listeners
     changeColorButton.addEventListener('click', changeColor,false);
     buttonDeux.addEventListener('click', removeBackground, false);
+    resetChanges.addEventListener('click', displaySVG, false)
 }
 
 //Button function to change the color of the background
@@ -27,4 +28,9 @@ function changeColor(){
 //Button to remove the background image
 function removeBackground(){
     document.body.style.backgroundImage = "none";
+}
+
+function displaySVG(){
+    var displayChange = document.getElementById("displaySVG")
+    displayChange.style.display = "initial";
 }
