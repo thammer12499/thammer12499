@@ -9,12 +9,14 @@ body{
         background-color:white;
     }
 
-section{
-    padding:10px;
+section {
+    padding: 10px;
 }
 
+/*Test commit*/
+
 section.main{
-            top: 0px;
+            top: 0;
             position:inherit;
             margin:auto;
             background:white;
@@ -67,7 +69,7 @@ img.tbl {
 img.projects {
 			width:200px;
 			height:auto;
-			border: 5px solid gray;
+			border: 5px solid grey;
 			border-radius: 5px;
 		}		
 		
@@ -138,7 +140,7 @@ button{
 
 svg{
     display: none;
-    margin: 10px 0px;
+    margin: 10px 0;
     width:100%;
     height: auto;
 }
