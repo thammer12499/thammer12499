@@ -44,24 +44,21 @@
 			<div>
 				<button type="button">Click Me for JavaScript Functions!</button>
 				<button type="button">Click Me for More JavaScript Functions!</button>
-				<button type="button">Click Me to Reset the Changes!</button>
+				<button type="button">Click Me to Display the SVG!</button>
 			</div>
-			<div>
-				<fieldset>
-					<legend>Video Games Divided by Genre</legend>
-					<input type="checkbox" id="RPGtoggle"/>
-					<span class="RPG">Persona 5 Royal, Dragon's Dogma, Baldur's Gate 3</span>
-					<br/>
-					<input type="checkbox" id="FPStoggle"/>
-					<span class="FPS">Call of Duty, Halo, Doom</span>
-					<br/>
-					<input type="checkbox" id="SurHortoggle"/>
-					<span class="SurHor">Resident Evil, Silent Hill, The Evil Within</span>
-					<br/>
-					<input type="checkbox" id="FarmSimtoggle"/>
-					<span class="Farm">Slime Rancher, Farm Simulator, Stardew Valley</span>
-				</fieldset>
-			</div>
+				<svg height="500" id="displaySVG">
+					<path d="M 100 100 A 50 50 0 1 1 99.99 100 Z" fill="transparent" stroke="none" id="circularPath" />
+					<circle cx="200" cy="200" r="50" stroke="black" stroke-width="3" fill="red">
+						<animate attributetype="CSS" attributeName="Opacity" from="1" to="0" dur="3s" repeatCount="indefinite">
+						</animate>
+					</circle>
+					<circle cx="100" cy="50" r="10" stroke="black" stroke-width="2">
+						<animate attributeName="fill" from="blue" to="yellow" dur="2s" begin="0s" repeatCount="indefinite"></animate>
+						<animateMotion dur="6s" repeatCount="indefinite">
+							<mpath href="#circularPath"></mpath>
+						</animateMotion>
+					</circle>
+				</svg>
 		</section>
 	</body>
 </html>
